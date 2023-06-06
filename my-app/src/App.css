@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+/*************** CSS GLOBAL **************/
+
+  main{
+    font-family: 'Inter',sans serif;
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content : center;
+    padding: 0 8em;
+  }
+
+  .left{
+    width: 700px;
+    padding: 2.6rem 0;
+    margin-left:25em;
+    display:flex;
+    flex-direction: column;
+    position:fixed;
+    top: 0px;
+    left:0px;
+  }
+  .right{
+    padding: 5rem 0;
+    margin-left: 48em ;
+    margin-right:18rem;
+    display:flex;
+    flex-direction: column;
+  }
+
+
+/************* CSS FOR LEFT SIDE ***************/
+
+    /************* PROFIL ***************/
+
+.navigation-profil{
+  margin-bottom: 5rem;
+}
+  .name{
+    color : #E2E8F0;
+    width :352px;
+    font-size: 3rem; /* 48px */
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -.025em;
+    opacity: 0.95;
+  }
+  .role{
+
+    color : #E2E8F0;
+    width :352px;
+    font-size: 1.3rem; /* 48px */
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -.025em;
+    margin: -1.5rem 0 1.5rem;
+    opacity: 0.9;
+  }
+  .me{
+    color : #94A3B8;
+    width :352px;
+    font-size: 1rem; /* 48px */
+    line-height: 1.5;
+    font-weight: 700;
+    letter-spacing: -.025em;
+    opacity: 0.8;
+    margin: 0 0 -1rem 0;
+    font-weight : 400;
+  }
+
+  .home-link:hover{
+    .name{
+      opacity:1;
+      transition: 0.2s;
+    }
+  }
+
+    /************* NAVIGATION BAR ***************/
+
+.navigation-list{
+  padding-bottom: 22rem; 
+  font-size: 1.4 rem; /* 48px */
+  line-height: 2;
+}
+.nav-list, .logo-list{
+  list-style-type: none;
+  padding-left: 0;
+}
+li{
+  margin: 0px 0px 1rem 0px;
+}
+a{
+  text-decoration:none;
+  color : #94A3B8;
+  font-size: 0.8rem; /* 48px */
+  font-weight: 700;
+  letter-spacing: -.025em;
+}
+
+button{
+  background:none;
+  opacity:1;
+  color:#94A3B8;
+  border:none;
+  cursor:pointer;
+
+}
+.hr-nav{
+  background-color: #fff;
+  width: 1.7rem;
+  opacity: 0.5;
+  padding-right: 0rem;
+  margin: 0 0.5rem;
+}
+button.nav-about:hover, button.nav-experience:hover, button.nav-projects:hover, button.nav-media:hover, button.nav-education:hover{
+  .hr-nav{
+    width: 4rem;
+    color : #E2E8F0;
+    opacity:1;
+    transition: 0.3s;
+    box-shadow: 5px 4px 0px 0px rgba(88, 239, 56, 0.5);
+    background-color: #ff6f61;
+  }
+}
+.nav-about,.nav-experience,.nav-projects, .nav-media,.nav-education{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight:400;
+  letter-spacing: -.005em;
+}
+
+
+    /************* LIEN SOCIAUX ***************/
+
+.logo-list{
+  display:flex;
+  flex-direction:row;
+  gap: 1rem;
+}
+
+.logo-git,.logo-insta,.logo-linkedin{
+  opacity:0.5;
+}
+
+.logo-git:hover,.logo-insta:hover,.logo-linkedin:hover{
+  opacity:1;
+  transition: 0.2s;
+  width : 40px;
+  height: 40px;
+}
+
+
+/************* CSS FOR RIGHT SIDE ***************/
+
+/************* STORY TELLING ***************/
+.profil-desc{
+  color : #94A3B8;
+  text-overflow:none;
+  font-size: 1.03rem; /* 48px */
+  line-height: 1.5;
+  letter-spacing: -.025em;
+  opacity: 0.8;
+  margin: 0 0 -1rem 0;
+  font-weight : 200;
+  width: 30rem;
+  padding-bottom: 3rem;
+}
+
+.profil-cv{
+  width: 480px;
+}
+
+
+/************* ACTUAL CV ***************/
+
+.profil-experience{
+  color : #94A3B8;
+  font-size: 1.03rem; /* 48px */
+  line-height: 1.5;
+  letter-spacing: -.025em;
+  opacity: 0.8;
+  font-weight : 200;
+  padding: 2em 2em;
+  margin: 0 0 0 -2em;
+  border-radius: 0.5em;
+  width: 30rem;
+  padding-bottom:3rem;
+  
+}
+.component-list-cv{
+  margin-top:3em;
+}
+
+
+.component-list-cv:hover{
+  background-color: rgba(224, 228, 254, 0.1);
+  padding: 0.3em 0.3em;
+  transition: 0.4s;
+  box-shadow: 3px 3px 0px 0px rgba(88, 239, 56, 0.4);
+}
+.component-list-cv{
+  display: flex;
+  flex-direction:row;
+  align-content: flex-start;
+  
+  
+}
+.date-cv{
+  color : #94A3B8;
+  font-weight : 200;
+  font-size: 0.75rem;
+  width : 30rem;
+  letter-spacing: 0.01em;
+  opacity: 0.7
+}
+.position{
+  color : #94A3B8;
+  font-weight : 800;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  
+}
+.company,.location{
+  color : #94A3B8;
+  font-weight : 400;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  opacity: 0.7;
+  margin-top:-1em;
+}
+
+
+
+.description{
+  display:flex;
+  flex-direction:column;
+  margin-top:-1.2em;
+}
+
+.skill-tool{
+  display:flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.mission{
+width: 20rem;
+text-align: justify;
+
+}
+.descriptionmission{
+  color : #94A3B8;
+  font-weight : 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  opacity: 1;
+  margin-top:-1em;
+}
+
+.tools,.skill{
+  background-color : rgba(196, 238, 254, 0.05);
+  border-radius: 15px;
+  width: fit-content;
+  color : rgba(51, 230, 141, 0.8);
+  font-weight : 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.01em;
+  padding: 0.5em 0.5em
+}
+
+.web-desc{
+  color : #94A3B8;
+  font-weight : 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+  margin-top:10em;
+  width: 480px;
+}
+
+.resume{
+  color : #94A3B8;
+  font-weight : 400;
+  font-size: 1rem;
+  opacity: 0.9;
+  text-decoration: underline 0.2em rgba(196, 238, 254, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom:5em;
+}
+.resume:hover{
+  opacity: 1;
+  font-size: 1.1rem;
+  text-decoration: underline 0.2em rgba(119, 228, 129, 0.8);
+}
+
+.img-article{
+  opacity: 0.75;
+  padding-top: 1rem;
+}
+.profil-media{
+  padding-top:5em;
+}
+.profil-education{
+  background-color:rgba(39, 245, 88, 0.02);
+  padding:0 1em;
+}
+
+.profil-desc{
+  background-color:rgba(39, 245, 88, 0.02);
+  padding:0 1em;
+}
